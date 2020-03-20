@@ -1,0 +1,71 @@
+.c-sidebar.c-sidebar-light {
+  color: #4f5d73;
+  background: #fff;
+  border-right: 1px solid rgba(159, 167, 179, 0.5);
+}
+
+.c-sidebar.c-sidebar-overlaid {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 1032;
+}
+
+.c-sidebar.c-sidebar-lg {
+  width: 65vw;
+}
+
+.c-sidebar {
+    display: flex;
+    flex: 0 0 65vw;
+    flex-direction: column;
+    order: -1;
+    width: 65vw;
+    padding: 0;
+    box-shadow: none;
+    color: #fff;
+    background: #3c4b64;
+    will-change: auto;
+    transition: box-shadow .25s,transform .25s,right .25s,margin-right .25s,width .25s,z-index 0s ease .25s;
+    border-bottom-left-radius: 50%;
+}
+
+.c-sidebar-hidden {
+    right: -65vw;
+}
+
+.c-sidebar-show {
+    right: 0vw;
+}
+
+.back-drop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1030;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000015;
+    transition: .25s;
+}
+
+.bd-show {
+    opacity: .5;
+}
+
+.bd-hidden {
+    opacity: 0;
+}
+
+.btn-handller {
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* left: 10vw; */
+    z-index: 1032;
+}
+
+.c-sidebar-btn-show {
+    right: 65vw;
+    transition: box-shadow .25s,transform .25s,right .25s,margin-right .25s,width .25s,z-index 0s ease .25s;
+}

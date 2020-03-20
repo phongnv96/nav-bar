@@ -1,0 +1,11 @@
+<button class="btn-handller c-sidebar-btn-{{isShowSideBar ? 'show' : 'hidden'}}" (click)="sideNavBarHandller()">
+  abc
+</button>
+<div
+  class="c-sidebar-{{isShowSideBar ? 'show' : 'hidden'}} c-sidebar c-sidebar-lg c-sidebar-light c-sidebar-right c-sidebar-overlaid"
+  id="aside">
+  <div class="tab-content">
+    <p>PhongNV 123</p>
+  </div>
+</div>
+<div (click)="closeSideNav()" class="{{isShowSideBar && 'back-drop'}} bd-{{isShowSideBar ? 'show' : 'hidden'}}"></div>
